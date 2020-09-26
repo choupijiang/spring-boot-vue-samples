@@ -11,11 +11,11 @@ import java.util.List;
 /**
  * Created by sang on 2018/7/20.
  */
-@CrossOrigin
+//@CrossOrigin
 @RepositoryRestResource(path = "bs",collectionResourceRel = "bs",itemResourceRel = "b")
 public interface BookRepository extends JpaRepository<Book, Integer> {
     @Override
-    @RestResource(exported = false)
+//    @RestResource(exported = false)
     void deleteById(Integer integer);
 
     @RestResource(path = "author",rel = "author")

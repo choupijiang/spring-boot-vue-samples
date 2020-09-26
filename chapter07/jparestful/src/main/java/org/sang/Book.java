@@ -17,13 +17,8 @@ public class Book {
     private String author;
     //省略getter/setter
 
-    @Override
-    public String toString() {
-        return "Book{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", author='" + author + '\'' +
-                '}';
+    public Book() {
+
     }
 
     public Integer getId() {
